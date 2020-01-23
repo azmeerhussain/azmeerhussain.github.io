@@ -1,0 +1,117 @@
+html, body{
+    min: 100%;
+    font-family: "American Typewriter";
+    scroll-behavior: smooth;
+}
+
+body {
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#nav {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    text-align: right;
+    float: right;
+    width: 50%;
+}
+
+.navHeaders{
+    color: #4f4f4f;
+    font-family: "American Typewriter";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-right: 50px;
+
+}
+.navHeaders:hover{
+    color: blue;
+}
+
+.container-logo{
+    width: 200px;
+    height: 120px;
+    padding-left: 20px;
+    padding-top: 15px;
+}
+
+.container-logo img{
+    width: 30%;
+    height: auto;
+}
+#centerTitle{
+    font-family: "Arial";
+    margin-top: 175px;
+    text-align: center;
+    font-size: 43px;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 28px;
+}
+
+#centerText{
+    font-family: "Arial";
+    margin-top: 15px;
+    text-align: center;
+    font-size: 17px;
+    font-style: normal;
+    text-decoration: none;
+}
+#downArrow{
+    position: relative;
+    margin-top: 23%;
+    margin-left: 48%;
+    font-size: 2em;
+}
+.fa-chevron-down:hover{
+    color: blue;
+}
+.column {
+    float: left;
+    width: 33.33%;
+    padding-top: 5px;
+    padding-bottom: 20%;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.project{
+    width: 90%;
+    margin-left: 53%;
+    margin-top: 50%;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+
+}
+.project:hover{
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.column#caption{
+    position: relative;
+
+}
